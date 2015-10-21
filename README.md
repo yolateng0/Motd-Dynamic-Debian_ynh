@@ -31,3 +31,4 @@
     
 #SOURCES
 https://wiki.debian.org/motd
+https://scotte.github.io/2014/03/a-better-dynamic-motd/
