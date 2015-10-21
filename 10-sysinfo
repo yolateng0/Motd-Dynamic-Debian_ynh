@@ -25,10 +25,11 @@ root_usage=`df -h / | awk '/\// {print $(NF-1)}'`
 memory_usage=`free -m | awk '/Mem/ { printf("%3.1f%%", $3/$2*100) }'`
 swap_usage=`free -m | awk '/Swap/ { printf("%3.1f%%", $3/$2*100) }'`
 users=`users | wc -w`
+cpuallusage=`ps aux | awk {'sum+=$3;print sum'} | tail -n 1 | awk '{printf "%.0f\n", $1}'`
 
 echo "System information as of: $date"
 echo
 printf "System load:\t%s\tMemory usage:\t%s\n" $load $memory_usage
 printf "Usage on /:\t%s\tSwap usage:\t%s\n" $root_usage $swap_usage
-printf "Local users:\t%s\n" $users
+printf "Local users:\t%s\tCPU usage:\t%s\n" $users $cpuallusage
 echo
