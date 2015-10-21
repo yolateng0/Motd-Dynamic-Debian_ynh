@@ -26,3 +26,6 @@
 
 #Reboot System for settings to take effect / Rebooter votre serveur
     sudo reboot
+    
+#SOURCES
+https://wiki.debian.org/motd
