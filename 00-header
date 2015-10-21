@@ -31,5 +31,5 @@ fi
 
 figlet $(hostname) && figlet YUNOHOST
 printf "\n"
-printf "Welcome to %s (%s).\n" "$DISTRIB_DESCRIPTION" "$(uname -r)"
+printf "Welcome to %s (%s).\n" "$DISTRIB_DESCRIPTION" "$(uname -a)"
 printf "\n"
