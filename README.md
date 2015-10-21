@@ -1,6 +1,6 @@
 ## ScriptMotd_Ynh Dynamic MOTD for Yunohost v2+ Debian Ubuntu Raspbian
 
->Affichage dynamique SSH spécial serveur Yunohost avec mise à jour installable
+>Affichage dynamique SSH spécial serveur Yunohost avec mise à jour de sécurités à prioriser
 
 >Debian Dynamic Message of the Day with Updates
 
